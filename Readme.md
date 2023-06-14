@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Немчинов](https://up.htmlacademy.ru/htmlcss/37/user/308327).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Рахманов](https://htmlacademy.ru/profile/flander).
 
 ---
 
