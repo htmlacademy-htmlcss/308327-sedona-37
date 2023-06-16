@@ -12,46 +12,47 @@
       <nav class="main-header__navigation">
         <ul class="main-header__navigation-list">
           <li class="main-header__navigation-item">
-            <a class="main-header__navigation-link" href="#">Главная</a>
+            <a class="main-header__navigation-link">Главная</a>
           </li>
           <li class="main-header__navigation-item">
             <a class="main-header__navigation-link" href="#">О седоне</a>
           </li>
           <li class="main-header__navigation-item">
-            <a class="main-header__navigation-link" href="/">Гостиницы</a>
+            <a class="main-header__navigation-link" href="/catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="main-header__user-menu-list">
+          <li class="main-header__user-menu-item">
+            <form class="main-header__user-menu-form" action="https://echo.htmlacademy.ru/" method="get">
+              <input type="search" name="user-menu-search" placeholder="Поиск" >
+            </form>
+          </li>
+          <li class="main-header__user-menu-item">
+            <a class="main-header__user-menu-basket" href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="main-header__user-menu-item">
+            <a class="main-header__user-menu-link" href="/catalog.html">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
-      <ul class="main-header__user-menu-list">
-        <li class="main-header__user-menu-item">
-          <form class="main-header__user-menu-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input type="search" name="user-menu-search" placeholder="Поиск" >
-          </form>
-        </li>
-        <li class="main-header__user-menu-item">
-          <a class="main-header__user-menu-basket" href="#">
-            <span class="visually-hidden">Избранное</span>
-          </a>
-        </li>
-        <li class="main-header__user-menu-item">
-          <a class="main-header__user-menu-link" href="/catalog.html">Хочу сюда!</a>
-        </li>
-      </ul>
     </header>
       <main class="main-page">
+        <h1 class="visually-hidden">Cайт города Седона</h1>
         <section class="hero">
-          <h1 class="visually-hidden">Добро пожаловать на сайт города Седона</h1>
-          <img class="hero__background-img" src="#" alt="Вид с высоты на горы и ущелье.">
-          <h2 class="hero__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="hero__desc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <h2 class="visually-hidden">Добро пожаловать в великолепную Седону!</h2>
+          <img class="hero__image-welcome" src="#" alt="Welcome to the gorgeous Sedona «Because the Grand Canyon sucks»">
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества отдыха в Седоне</h2>
+          <h3 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <p class="advantages__desc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__item-title">Настоящий городок</h3>
               <p class="advantages__item-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img class="advantages__image-city" src="#" alt="Площадь города с красивыми зданиями.">
+              <img class="advantages__item-image advantages__item-image--city" src="#" alt="Площадь города с красивыми зданиями.">
             </li>
             <li class="advantages__item">
               <h3 class="advantages__item-title">Небольшая
@@ -59,20 +60,17 @@
               <p class="advantages__item-desc">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__item-title">Красивая
-              дорога</h3>
+              <h3 class="advantages__item-title">Красивая дорога</h3>
               <p class="advantages__item-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__item-title">Мало
-              туристов</h3>
+              <h3 class="advantages__item-title">Мало туристов</h3>
               <p class="advantages__item-desc">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__item-title">Там есть
-              мост дьявола</h3>
+              <h3 class="advantages__item-title">Там есть мост дьявола</h3>
               <p class="advantages__item-desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              <img class="advantages__image-bridge" src="#" alt="Природный мост из горных пород, в каньёне. ">
+              <img class="advantages__item-image advantages__item-image--bridge" src="#" alt="Природный мост из горных пород, в каньёне. ">
             </li>
           </ul>
         </section>
@@ -86,8 +84,7 @@
             </li>
             <li class="features__item">
               <h3 class="features__item-title">Еда</h3>
-              <p class="features__item-desc">Всегда заказывайте
-              топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="features__item-desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="features__item">
               <h3 class="features__item-title">Сувениры</h3>
@@ -104,9 +101,9 @@
         <section class="subscribe">
           <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
           <p class="subscribe__desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe__email" type="email" name="subscribe__email" placeholder="Ваш e-mail">
-            <button class="subscribe__email-btn" type="submit" aria-label="Отправить форму"></button>
+            <button class="subscribe__email-btn" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -114,23 +111,21 @@
         <ul class="main-footer__socials-list">
           <li class="main-footer__socials-item">
             <a class="main-footer__socials-link" href="https://vk.com/htmlacademy">
-              <img class="main-footer__socials-vk" src="#" alt="Наш Вконтакте">
+              <img class="main-footer__socials-image main-footer__socials-image--vk" src="#" alt="Наш Вконтакте">
             </a>
           </li>
           <li class="main-footer__socials-item">
             <a class="main-footer__socials-link" href="tg://resolve?domain=htmlacademy">
-              <img class="main-footer__socials-telegram" src="#" alt="Наш Телеграм">
+              <img class="main-footer__socials-image main-footer__socials-image--telegram" src="#" alt="Наш Телеграм">
             </a>
           </li>
           <li class="main-footer__socials-item">
             <a class="main-footer__socials-link" href="https://www.youtube.com/@HTMLAcademyRUS/featured">
-              <img class="main-footer__socials-youtube" src="#" alt="Наш канал на Youtube">
+              <img class="main-footer__socials-image main-footer__socials-image--youtube" src="#" alt="Наш канал на Youtube">
             </a>
           </li>
         </ul>
-        <a class="main-footer__contact" href="tel:+78128121212">
-          +7 (812) 812-12-12
-        </a>
+        <a class="main-footer__contact" href="tel:+78128121212"> +7 (812) 812-12-12 </a>
         <a class="main-footer__copyright" href="https://htmlacademy.ru">
           <img class="main-footer__copyright-logo" src="#" alt="Логотип сайта «HTML Academy»">
         </a>
