@@ -42,12 +42,9 @@ img {
 body {
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -56,7 +53,15 @@ body {
 /* header */
 
 .main-header__navigation-list,
-.main-header__user-menu-list {
+.main-header__user-menu-list,
+.advantages__list,
+.features__list,
+.breadcrumbs__list,
+.filter-apartment__list,
+.filter__card-layout-list,
+.options__card-list,
+.pagination__list,
+.main-footer__socials-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -69,10 +74,6 @@ body {
 
 .main-header__navigation-link:first-child {
   cursor: pointer;
-}
-
-.main-header__user-menu-basket {
-  text-decoration: none;
 }
 
 /* main */
@@ -92,7 +93,6 @@ body {
   margin-top: 0;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -104,13 +104,6 @@ body {
   margin-top: 0;
   font-size: 22px;
   line-height: 26px;
-}
-
-.advantages__list,
-.features__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .advantages__item {
@@ -187,11 +180,6 @@ body {
 
 
 /* footer */
-.main-footer__socials-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
 .main-footer__socials-image,
 .main-footer__copyright-logo {
@@ -261,25 +249,19 @@ body {
 
 /* catalog */
 
-.select-housing {
+.filter-apartment {
   background-image: url("../images/catalog.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(130, 179, 211, 1);
 }
 
-.select-housing__title {
+.filter-apartment__title {
   margin-top: 0;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
   color: rgba(255, 255, 255, 1);
-}
-
-.breadcrumbs__list {
-  margin-top: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .breadcrumbs__link {
@@ -288,7 +270,7 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
-.select-housing__legend {
+.filter-apartment__legend {
   padding: 0;
   font-size: 20px;
   line-height: 24px;
@@ -296,23 +278,18 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
-.select-housing__fieldset {
+.filter-apartment__fieldset {
   margin-top: 0;
   padding: 0;
   border: 0;
 }
 
-.select-housing__list {
-  margin-top: 0;
-  padding: 0;
-}
-
-.select-housing__label {
+.filter-apartment__label {
   line-height: 23px;
   color: rgba(255, 255, 255, 1);
 }
 
-.select-housing__form-btn {
+.filter-apartment__form-btn {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -321,25 +298,19 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
-.select-housing__form-btn--submit {
+.filter-apartment__form-btn--submit {
   background-color: rgba(130, 179, 211, 1);
 }
 
-.select-housing__form-btn--reset {
+.filter-apartment__form-btn--reset {
   background: none;
 }
 
 .filter__title {
   margin-top: 0;
   font-size: 30px;
-  font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-}
-
-.filter__card-layout-list {
-  margin-top: 0;
-  padding: 0;
 }
 
 .filter__card-layout-btn {
@@ -368,12 +339,6 @@ body {
   background-color: rgba(0, 0, 0, 1);
 }
 
-.options__card-list {
-  margin-top: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .options__card-item {
   border: 1px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
@@ -383,7 +348,6 @@ body {
   margin-top: 0;
   font-size: 24px;
   line-height: 28px;
-  font-weight: 700;
 }
 
 .options__card-desc {
@@ -426,12 +390,6 @@ body {
   background-color: rgba(242, 242, 242, 1);
 }
 
-.pagination__list {
-  margin-top: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .pagination__item {
   font-size: 20px;
   line-height: 36px;
@@ -454,15 +412,15 @@ body {
   background-color: rgba(255, 255, 255, 1);
 }
 
-.subscribe-catalog {
+.subscribe--catalog {
   background-image: none;
   background-color: inherit;
 }
 
-.subscribe-catalog__title {
+.subscribe__title--color {
   color: rgba(0, 0, 0, 1);
 }
 
-.subscribe-catalog__desc {
+.subscribe__desc--color {
   color: rgba(51, 51, 51, 1);
 }
