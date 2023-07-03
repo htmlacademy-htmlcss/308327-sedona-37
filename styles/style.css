@@ -106,10 +106,6 @@ body {
   color: inherit;
 }
 
-/* .main-header__navigation-link {
-  cursor: pointer;
-} */
-
 .main-header__user-menu-list {
   margin-left: auto;
   display: flex;
@@ -338,8 +334,7 @@ body {
 }
 
 .subscribe__email {
-  min-width: 452px;
-  padding: 14px 20px;
+  padding: 14px 263px 14px 20px;
   border: none;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
