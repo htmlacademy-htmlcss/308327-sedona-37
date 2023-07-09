@@ -85,12 +85,12 @@ body {
 
 .main-header__logo-link {
   display: flex;
+  min-width: 140px;
+  position: relative;
 }
 
 .main-header__logo-link--secondary:hover {
-  transform: scale(1.17);
-  position: relative;
-  top: 5px;
+  opacity: 0.6;
 }
 
 .main-header__navigation {
@@ -118,6 +118,10 @@ body {
 
 .main-header__logo-img {
   object-fit: unset;
+  max-width: min-content;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .main-header__navigation-link--current,
@@ -163,8 +167,7 @@ body {
 }
 
 .main-header__logo-link--secondary:active,
-.main-header__navigation-link:not(.main-header__navigation-link--current):active,
-.main-header__user-menu-link:active {
+.main-header__navigation-link:not(.main-header__navigation-link--current):active {
   opacity: 0.3;
 }
 
@@ -206,7 +209,11 @@ body {
 }
 
 .main-header__user-menu-link:hover {
-  transform: scale(1.17);
+  opacity: 0.6;
+}
+
+.main-header__user-menu-link:active {
+  opacity: 0.3;
 }
 
 .main-header__user-menu-link--search {
@@ -369,7 +376,7 @@ body {
 
 .advantages__item-title {
   max-width: 175px;
-  margin-bottom: 62px;
+  padding-bottom: 62px;
   position: relative;
 }
 
@@ -380,7 +387,7 @@ body {
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
-  bottom: -30px;
+  bottom: 30px;
   left: 57px;
 }
 
@@ -436,32 +443,25 @@ body {
 
 .features__item-title::before {
   content: "";
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    position: absolute;
+    top: 0;
 }
 
 .features__item-title--apartaments::before {
-  width: 75px;
-  height: 72px;
   background-image: url("../images/house.svg");
-  left: 77px;
 }
 
 .features__item-title--food::before {
-  width: 74px;
-  height: 70px;
   background-image: url("../images/food.svg");
-  left: 77px;
 }
 
 .features__item-title--suvenirs::before {
-  width: 64px;
-  height: 76px;
   background-image: url("../images/souvenir.svg");
-  left: 82px;
 }
 
 .features__item-desc {
