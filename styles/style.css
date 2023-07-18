@@ -262,7 +262,8 @@ body {
 .subscribe__email-btn:active,
 .filter-apartment__form-btn:active,
 .options__card-link--more:active,
-.options__card-btn:active {
+.options__card-btn:active,
+.modal__form-submit-btn:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -556,7 +557,9 @@ body {
 .filter-apartment__form-btn--submit:hover,
 .filter-apartment__form-btn--submit:focus-visible,
 .options__card-btn:hover,
-.options__card-btn:focus-visible {
+.options__card-btn:focus-visible,
+.modal__form-submit-btn:hover,
+.modal__form-submit-btn:focus-visible {
   background-color: rgba(104, 162, 202, 1);
   outline: none;
 }
@@ -564,7 +567,8 @@ body {
 @supports not selector(:focus-visible) {
   .subscribe__email-btn:focus,
   .filter-apartment__form-btn--submit:focus,
-  .options__card-btn:focus {
+  .options__card-btn:focus,
+  .modal__form-submit-btn:focus {
     background-color: rgba(104, 162, 202, 1);
     outline: none;
   }
@@ -1324,12 +1328,17 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container--close {
+  display: none;
+}
+
 .modal {
   min-width: 717px;
   margin: auto;
   padding: 64px 70px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 30px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   position: relative;
 }
 
@@ -1355,6 +1364,31 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   border: none;
+  cursor: pointer;
+}
+
+.modal__close-button:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.modal__close-button:focus-visible {
+  background-color: rgba(230, 230, 230, 1);
+  outline: 3px solid rgba(131, 179, 211, 1);
+  outline-offset: -3px;
+}
+
+@supports not selector(:focus-visible) {
+  .modal__close-button:focus {
+    background-color: rgba(230, 230, 230, 1);
+    outline: 3px solid rgba(131, 179, 211, 1);
+    outline-offset: -3px;
+  }
+}
+
+.modal__close-button:active {
+  background-color: rgba(230, 230, 230, 1);
+  opacity: 0.3;
+  outline: none;
 }
 
 .modal__form {
@@ -1402,44 +1436,22 @@ body {
 }
 
 .modal__input-date {
-  padding: 14px 20px;
+  padding: 14px 208px 14px 20px;
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   background-color: rgba(242, 242, 242, 1);
+  background-image: url("../images/modal-date.svg");
+  background-position: 402px 16px;
+  background-repeat: no-repeat;
   border: 0;
   border-radius: 4px;
-  position: relative;
 }
 
-.modal__input-date::-webkit-datetime-edit {
-  display: none;
-}
-
-.modal__input-date::after {
-  position: absolute;
-  top: 13px;
-  left: 19px;
-}
-
-.modal__input-date--arrival::after {
-  content: "27 апреля 2020";
-}
-
-.modal__input-date--departure::after {
-  content: "1 сентября 2023";
-}
-
-.modal__input-date::-webkit-calendar-picker-indicator {
-  display: block;
-  padding-left: 380px;
-  width: 16px;
-  height: 15px;
-  background-image: url("../images/modal-date.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.modal__input-date::placeholder {
+  color: inherit;
 }
 
 .modal__form-fieldset-guest {
@@ -1450,7 +1462,6 @@ body {
 
 .modal__input-number-wrapper {
   margin-left: 46px;
-  width: 110px;
   display: flex;
   position: relative;
 }
@@ -1464,41 +1475,51 @@ body {
   text-align: center;
   background-color: rgba(242, 242, 242, 1);
   border: none;
+  outline: none;
   border-radius: 4px;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 .modal__input-number::-webkit-outer-spin-button,
 .modal__input-number::-webkit-inner-spin-button {
-  appearance: none;
+  display: none;
 }
+
 
 .modal__btn-number {
   padding: 0;
-  height: 48px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
   background-color: rgba(242, 242, 242, 1);
+  outline: none;
   border: none;
   border-radius: 4px;
   position: absolute;
+  cursor: pointer;
 }
 
-.modal__btn-number::before {
+.modal__btn-number--min::before,
+.modal__btn-number--max::before {
   content: "";
   display: block;
   width: 14px;
   height: 2px;
   background-color: rgba(117, 97, 87, 0.3);
   position: absolute;
-  top: 24px;
-  left: 13px;
+  top: 9px;
+  left: 3px;
 }
 
 .modal__btn-number--min {
-  left: 0;
+  top: 14px;
+  left: 10px;
 }
 
 .modal__btn-number--max {
-  right: 0;
+  top: 14px;
+  right: 10px;
 }
 
 .modal__btn-number--max::after {
@@ -1508,8 +1529,43 @@ body {
   height: 14px;
   background-color: rgba(117, 97, 87, 0.3);
   position: absolute;
-  top: 18px;
-  left: 19px;
+  top: 3px;
+  left: 9px;
+}
+
+.modal__btn-number--min:hover::before,
+.modal__btn-number--max:hover::before,
+.modal__btn-number--max:hover::after,
+.modal__btn-number--max:focus-visible::before,
+.modal__btn-number--min:focus-visible::before,
+.modal__btn-number--max:focus-visible::after {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.modal__btn-number:focus-visible,
+.modal__input-date:focus-visible {
+  outline: 3px solid rgba(130, 179, 211, 1);
+}
+
+@supports not selector(:focus-visible) {
+  .modal__btn-number--max:focus::before,
+  .modal__btn-number--min:focus::before,
+  .modal__btn-number--max:focus::after {
+    background-color: rgba(0, 0, 0, 1);
+  }
+}
+
+@supports not selector(:focus-visible) {
+  .modal__btn-number:focus,
+  .modal__input-date:focus {
+    outline: 3px solid rgba(130, 179, 211, 1);
+  }
+}
+
+.modal__btn-number--min:active::before,
+.modal__btn-number--max:active::before,
+.modal__btn-number--max:active::after {
+  opacity: 0.3;
 }
 
 .modal__input-label--kids {
@@ -1526,22 +1582,48 @@ body {
   background-position: center;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal__tooltip-btn:focus-visible {
+  opacity: 0.6;
+  outline: none;
+}
+
+@supports not selector(:focus-visible) {
+  .modal__tooltip-btn:focus {
+    opacity: 0.6;
+    outline: none;
+  }
 }
 
 .modal__tooltip-text {
   display: none;
   margin: 0;
+  padding: 20px 18px 23px 22px;
+  width: 256px;
   font-size: 16px;
   line-height: 20px;
   color: rgba(255, 255, 255, 1);
-  padding: 15px 18px 18px 22px;
-  width: 216px;
   background-color: rgba(51, 51, 51, 1);
   border-radius: 10px;
   position: absolute;
   right: 112px;
   bottom: 25px;
   z-index: 1;
+}
+
+.modal__tooltip-text::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgba(51, 51, 51, 1);
+  position: absolute;
+  top: -10px;
+  left: 118px;
 }
 
 .modal__tooltip-btn:active + .modal__tooltip-text,
@@ -1560,4 +1642,9 @@ body {
   background-color: rgba(131, 179, 211, 1);
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal__form-submit-btn:active {
+  background-color: rgba(130, 179, 211, 1);
 }
