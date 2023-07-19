@@ -64,63 +64,64 @@
               <legend class="filter-apartment__legend">Инфраструктура:</legend>
               <ul class="filter-apartment__list">
                 <li class="filter-apartment__item">
-                  <label class="filter-apartment__label">
-                    <input type="checkbox" name="infrastructure" value="Pool" checked>
-                    Бассейн
-                  </label>
+                  <input class="visually-hidden filter-apartment__checkbox" id="checkbox-pool" type="checkbox" name="infrastructure" value="Pool" checked>
+                  <span class="filter-apartment__checkbox-mark"></span>
+                  <label class="filter-apartment__label" for="checkbox-pool">Бассейн</label>
                 </li>
                 <li class="filter-apartment__item">
-                  <label class="filter-apartment__label">
-                    <input type="checkbox" name="infrastructure" value="Parking" checked>
-                    Парковка
-                  </label>
+                  <input class="visually-hidden filter-apartment__checkbox" id="checkbox-parking"  type="checkbox" name="infrastructure" value="Parking" checked>
+                  <span class="filter-apartment__checkbox-mark"></span>
+                  <label class="filter-apartment__label" for="checkbox-parking">Парковка</label>
                 </li>
                 <li class="filter-apartment__item">
-                  <label class="filter-apartment__label">
-                    <input type="checkbox" name="infrastructure" value="Wi-Fi">
-                    Wi-Fi
-                  </label>
+                  <input class="visually-hidden filter-apartment__checkbox" id="checkbox-wi-fi" type="checkbox" name="infrastructure" value="Wi-Fi">
+                  <span class="filter-apartment__checkbox-mark"></span>
+                  <label class="filter-apartment__label" for="checkbox-wi-fi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-apartment__fieldset filter-apartment__fieldset--housing">
+            <fieldset class="filter-apartment__fieldset filter-apartment__fieldset--type">
               <legend class="filter-apartment__legend">Тип жилья:</legend>
               <ul class="filter-apartment__list">
                 <li class="filter-apartment__item">
-                  <label class="filter-apartment__label">
-                    <input type="radio" name="type-apartment" value="hotel" checked>
-                    Гостиница
-                  </label>
+                  <input class="visually-hidden filter-apartment__radio" id="radio-hotel" type="radio" name="type-apartment" value="hotel" checked>
+                  <span class="filter-apartment__radio-mark"></span>
+                  <label class="filter-apartment__label" for="radio-hotel">Гостиница</label>
                 </li>
                 <li class="filter-apartment__item">
-                  <label class="filter-apartment__label">
-                    <input type="radio" name="type-apartment" value="motel">
-                    Мотель
-                  </label>
+                  <input class="visually-hidden filter-apartment__radio" id="radio-motel" type="radio" name="type-apartment" value="motel">
+                  <span class="filter-apartment__radio-mark"></span>
+                  <label class="filter-apartment__label" for="radio-motel">Мотель</label>
                 </li>
                 <li class="filter-apartment__item">
-                  <label class="filter-apartment__label">
-                    <input type="radio" name="type-apartment" value="Apartments">
-                    Апартаменты
-                  </label>
+                  <input class="visually-hidden filter-apartment__radio" id="radio-apartments" type="radio" name="type-apartment" value="Apartments">
+                  <span class="filter-apartment__radio-mark"></span>
+                  <label class="filter-apartment__label" for="radio-apartments">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-apartment__fieldset filter-apartment__fieldset--cost">
               <legend class="filter-apartment__legend">Стоимость, ₽:</legend>
               <ul class="filter-apartment__list filter-apartment__list--cost">
-                <li class="filter-apartment__item">
-                  <label class="filter-apartment__label filter-apartment__label--min-cost">от
-                    <input type="number" min="0" max="10000" step="1" name="cost" value="0">
-                  </label>
+                <li class="filter-apartment__item filter-apartment__item--cost">
+                  <label class="filter-apartment__label filter-apartment__label--cost" for="range-input-min">от</label>
+                    <input class="filter-apartment__range-input filter-apartment__range-input--min" id="range-input-min" type="number" min="0" max="10000" step="1" name="cost" value="0">
                 </li>
-                <li class="filter-apartment__item">
-                  <label class="filter-apartment__label filter-apartment__label--max-cost">до
-                    <input type="number" min="0" max="10000" step="1" name="cost" value="9000">
-                  </label>
+                <li class="filter-apartment__item filter-apartment__item--cost">
+                  <label class="filter-apartment__label filter-apartment__label--cost" for="range-input-max">до</label>
+                  <input class="filter-apartment__range-input filter-apartment__range-input--max" id="range-input-max" type="number" min="0" max="10000" step="1" name="cost" value="9000">
                 </li>
-                <li class="filter-apartment__item filter-apartment__item--range">
-                  <input type="range" min="0" max="10000" value="0" step="1000" name="range">
+                <li class="filter-apartment__item filter-apartment__range">
+                  <div class="filter-apartment__range-scale">
+                    <div class="filter-apartment__range-bar">
+                      <button class="filter-apartment__range-toggle filter-apartment__range-toggle--min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="filter-apartment__range-toggle filter-apartment__range-toggle--max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </fieldset>
