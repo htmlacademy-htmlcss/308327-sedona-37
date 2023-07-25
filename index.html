@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
@@ -17,7 +18,7 @@
               <a class="main-header__navigation-link main-header__navigation-link--current">Главная</a>
             </li>
             <li class="main-header__navigation-item">
-              <a class="main-header__navigation-link" href="#">О седоне</a>
+              <a class="main-header__navigation-link" href="#">О Седоне</a>
             </li>
             <li class="main-header__navigation-item">
               <a class="main-header__navigation-link" href="/catalog.html">Гостиницы</a>
@@ -73,13 +74,13 @@
               <h3 class="advantages__item-title">Мало туристов</h3>
               <p class="advantages__item-desc">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="advantages__item advantages__item--blue">
-              <h3 class="advantages__item-title">Там есть мост дьявола</h3>
-              <p class="advantages__item-desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </li>
             <li class="advantages__item advantages__item--image">
               <img class="advantages__item-image-bridge" src="images/photo-2.jpg" width="800" height="385"
                 alt="Природный мост из горных пород, в каньёне.">
+            </li>
+            <li class="advantages__item advantages__item--blue">
+              <h3 class="advantages__item-title">Там есть мост дьявола</h3>
+              <p class="advantages__item-desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </li>
           </ul>
         </section>
@@ -91,15 +92,15 @@
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__item-title features__item-title--apartaments">Жильё</h3>
-              <p class="features__item-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="features__item-desc features__item-desc--apartaments">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="features__item">
               <h3 class="features__item-title features__item-title--food">Еда</h3>
-              <p class="features__item-desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="features__item-desc">Всегда заказывайте <br> топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="features__item">
               <h3 class="features__item-title features__item-title--suvenirs">Сувениры</h3>
-              <p class="features__item-desc">Не только китайского,
+              <p class="features__item-desc">Не только китайского, <br>
               но и настоящего местного производства!</p>
             </li>
           </ul>
@@ -177,16 +178,16 @@
           <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="modal__form-fieldset modal__form-fieldset--date">
               <legend class="visually-hidden">Даты размещения.</legend>
-              <label class="modal__input-label" for="date-arrival">Дата заезда:</label>
+              <label class="modal__input-label" for="date-arrival">Дата Заезда:</label>
               <div class="modal__input-date-wrapper">
                 <input class="modal__input-date" id="date-arrival" type="text" name="date-arrival" placeholder="27 апреля 2020" value="27 апреля 2020">
                 <p class="modal__input-comment modal__input-comment--error">
                   Мы не можем отправить вас в прошлое.
                 </p>
               </div>
-              <label class="modal__input-label" for="date-depature">Дата выезда:</label>
+              <label class="modal__input-label" for="date-depature">Дата Выезда:</label>
               <div class="modal__input-date-wrapper">
-                <input class="modal__input-date" id="date-depature" type="text" name="date-depature" placeholder="1 сентября 2021" value="1 сентября 2021">
+                <input class="modal__input-date" id="date-depature" type="text" name="date-depature" placeholder="1 сентября 2023" value="1 сентября 2023">
                 <p class="modal__input-comment">
                   На эти даты есть свободные номера. Пока есть.
                 </p>
