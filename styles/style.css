@@ -131,7 +131,7 @@ body {
 .main-header__navigation-link:not(.main-header__navigation-link--current):hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  text-underline-offset: 19px;
+  text-underline-offset: 18px;
   text-underline-position: under;
 }
 
@@ -240,6 +240,7 @@ body {
   background-color: rgba(117, 97, 87, 1);
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .main-header__modal-btn:hover,
@@ -338,7 +339,7 @@ body {
 }
 
 .advantages__title-wrapper {
-  padding: 69px 274px 90px;
+  padding: 69px 272px 90px;
 }
 
 .advantages__title-wrapper,
@@ -359,7 +360,7 @@ body {
 }
 
 .advantages__item {
-  padding: 114px 85px 112px;
+  padding: 114px 84px 112px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -370,6 +371,12 @@ body {
 .advantages__item--image {
   padding: 0;
   grid-column: span 2;
+}
+
+.advantages__item-image-city,
+.advantages__item-image-bridge {
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages__item--blue {
@@ -523,6 +530,7 @@ body {
   background-image: url("../images/subscribe.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: rgba(130, 179, 211, 1);
 }
 
@@ -545,7 +553,11 @@ body {
 }
 
 .subscribe__email {
-  padding: 18px 263px 14px 20px;
+  flex-grow: 1;
+  padding: 14px 220px 14px 20px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 24px;
   border: none;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -570,6 +582,7 @@ body {
   border: none;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  cursor: pointer;
 }
 
 .subscribe__email-btn:hover,
@@ -702,6 +715,7 @@ body {
   background-image: url("../images/catalog.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: rgba(130, 179, 211, 1);
 }
 
@@ -1036,11 +1050,13 @@ body {
   border: none;
   color: rgba(255, 255, 255, 1);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .filter-apartment__form-btn--submit {
   margin-bottom: 32px;
   background-color: rgba(130, 179, 211, 1);
+  cursor: pointer;
 }
 
 .filter-apartment__form-btn--submit:active {
@@ -1070,7 +1086,7 @@ body {
 }
 
 .filter-sorting__select-cost {
-  margin-left: 203px;
+  margin-left: auto;
   padding: 12px 18px;
   min-width: 288px;
   font-family: inherit;
@@ -1082,6 +1098,7 @@ body {
   border-radius: 4px;
   -webkit-appearance: none;
   appearance: none;
+  background-color: inherit;
   background-image: url("../images/sorting-arrow.svg");
   background-position: 258px 18px;
   background-repeat: no-repeat;
@@ -1126,6 +1143,7 @@ body {
   outline: 2px solid rgba(229, 229, 229, 1);
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .filter-sorting__card-layout-btn:hover,
@@ -1391,12 +1409,13 @@ body {
 
 .modal {
   min-width: 717px;
-  margin: auto;
+  margin: 0 auto auto;
   padding: 62px 70px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   position: relative;
+  top: 396px;
 }
 
 .modal__content-title {
