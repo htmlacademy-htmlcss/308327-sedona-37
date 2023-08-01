@@ -615,15 +615,17 @@ body {
 
 .main-footer {
   padding: 44px 70px 30px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  column-gap: 236.5px;
+  grid-template-columns: repeat(3, max-content);
   align-items: center;
 }
 
 .main-footer__socials-list {
+  grid-column: 1 / 2;
+  width: 142px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .main-footer__socials-item {
@@ -646,10 +648,6 @@ body {
   padding-right: 12px;
 }
 
-.main-footer__copyright--logo {
-  padding-top: 4px;
-}
-
 .main-footer__socials-link--vk:focus-visible path,
 .main-footer__socials-link--vk:hover path,
 .main-footer__socials-link--telegram:focus-visible path,
@@ -665,14 +663,8 @@ body {
   opacity: 0.3;
 }
 
-.main-footer__contact-container,
-.main-footer__copyright-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 .main-footer__contact {
+  grid-column: 2 / 3;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
@@ -694,6 +686,14 @@ body {
 
 .main-footer__contact:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.main-footer__copyright {
+  grid-column: 3 / -1;
+}
+
+.main-footer__copyright--logo {
+  padding-top: 4px;
 }
 
 .main-footer__copyright--logo:hover path,
@@ -1724,6 +1724,7 @@ body {
 .modal__form-submit-btn {
   grid-column: 1 / -1;
   padding: 18px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
