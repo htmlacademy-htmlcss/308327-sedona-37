@@ -49,8 +49,8 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: rgba(51, 51, 51, 1);
-  background-color: rgba(255, 255, 255, 1);
+  color: #333333;
+  background-color: #ffffff;
 }
 
 /* index */
@@ -136,15 +136,15 @@ body {
 }
 
 .main-header__navigation-link--current {
-  -webkit-text-decoration-color: rgba(117, 98, 87, 1);
-  text-decoration-color: rgba(117, 98, 87, 1);
+  -webkit-text-decoration-color: #756257;
+  text-decoration-color: #756257;
   cursor: default;
   z-index: 1;
 }
 
 .main-header__navigation-link:not(.main-header__navigation-link--current):hover {
-  -webkit-text-decoration-color: rgba(104, 162, 202, 1);
-  text-decoration-color: rgba(104, 162, 202, 1);
+  -webkit-text-decoration-color: #68a2ca;
+  text-decoration-color: #68a2ca;
   color: rgba(51, 51, 51, 0.6);
 }
 
@@ -154,7 +154,7 @@ body {
 .subscribe__email:focus-visible,
 .main-footer__socials-link:focus-visible,
 .filter-apartment__form-btn--reset:focus-visible {
-  outline: 3px solid rgba(104, 162, 202, 1);
+  outline: 3px solid #68a2ca;
   outline-offset: -3px;
   border-radius: 4px;
 }
@@ -167,7 +167,7 @@ body {
   .main-footer__socials-link:focus,
   .filter-apartment__form-btn--reset:focus {
     /* Fallback for browsers without :focus-visible support */
-    outline: 3px solid rgba(104, 162, 202, 1);
+    outline: 3px solid #68a2ca;
     outline-offset: -3px;
     border-radius: 4px;
   }
@@ -207,8 +207,8 @@ body {
   height: 20px;
   font-size: 10px;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(125, 181, 79, 1);
+  color: #ffffff;
+  background-color: #7db54f;
   border-radius: 50%;
   position: absolute;
   top: 11px;
@@ -228,7 +228,7 @@ body {
   background-image: url("../images/search.svg");
 }
 
-.main-header__modal-btn {
+.main-header__modal-link {
   padding: 8px 34px;
   margin-left: 20px;
   font-family: inherit;
@@ -236,33 +236,33 @@ body {
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(117, 97, 87, 1);
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756157;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
 }
 
-.main-header__modal-btn:hover,
-.main-header__modal-btn:focus-visible,
+.main-header__modal-link:hover,
+.main-header__modal-link:focus-visible,
 .search-hotel__catalog-link:hover,
 .search-hotel__catalog-link:focus-visible,
 .options__card-link--more:hover,
 .options__card-link--more:focus-visible {
-  background-color: rgba(97, 80, 72, 1);
+  background-color: #615048;
   outline: none;
 }
 
 @supports not selector(:focus-visible) {
-  .main-header__modal-btn:focus,
+  .main-header__modal-link:focus,
   .search-hotel__catalog-link:focus,
   .options__card-link--more:focus {
-    background-color: rgba(97, 80, 72, 1);
+    background-color: #615048;
     outline: none;
   }
 }
 
-.main-header__modal-btn:active,
+.main-header__modal-link:active,
 .search-hotel__catalog-link:active,
 .subscribe__email-btn:active,
 .filter-apartment__form-btn:active,
@@ -272,10 +272,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-header__modal-btn:active,
+.main-header__modal-link:active,
 .search-hotel__catalog-link:active,
 .options__card-link--more:active {
-  background-color: rgba(117, 97, 87, 1);
+  background-color: #756157;
 }
 
 
@@ -292,7 +292,7 @@ body {
   background-image: url("../images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
   position: relative;
 }
 
@@ -381,7 +381,7 @@ body {
 
 .advantages__item--blue {
   padding: 102px 85px;
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
 }
 
 .advantages__item--gray {
@@ -414,7 +414,7 @@ body {
 }
 
 .advantages__item--blue .advantages__item-title {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .advantages__item--blue .advantages__item-title::after {
@@ -427,7 +427,7 @@ body {
 }
 
 .advantages__item--blue .advantages__item-desc {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .features__title-wrapper {
@@ -518,8 +518,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: rgba(117, 97, 87, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: #756157;
+  color: #ffffff;
   border-radius: 4px;
 }
 
@@ -531,7 +531,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
 }
 
 .subscribe__title {
@@ -545,7 +545,7 @@ body {
 .subscribe__title,
 .subscribe__desc {
   text-align: center;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .subscribe__form {
@@ -577,8 +577,8 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: rgba(130, 179, 211, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: #82b3d3;
+  color: #ffffff;
   border: none;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -593,7 +593,7 @@ body {
 .options__card-btn:focus-visible,
 .modal__form-submit-btn:hover,
 .modal__form-submit-btn:focus-visible {
-  background-color: rgba(104, 162, 202, 1);
+  background-color: #68a2ca;
   outline: none;
 }
 
@@ -602,13 +602,13 @@ body {
   .filter-apartment__form-btn--submit:focus,
   .options__card-btn:focus,
   .modal__form-submit-btn:focus {
-    background-color: rgba(104, 162, 202, 1);
+    background-color: #68a2ca;
     outline: none;
   }
 }
 
 .subscribe__email-btn:active {
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
 }
 
 /* footer */
@@ -656,7 +656,7 @@ body {
 .main-footer__socials-link--telegram:hover path,
 .main-footer__socials-link--youtube:focus-visible path,
 .main-footer__socials-link--youtube:hover path {
-  fill: rgba(104, 162, 202, 1);
+  fill: #68a2ca;
 }
 
 .main-footer__socials-link--vk:active path,
@@ -665,22 +665,29 @@ body {
   opacity: 0.3;
 }
 
+.main-footer__contact-container,
+.main-footer__copyright-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .main-footer__contact {
   font-size: 40px;
   line-height: 40px;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-decoration: none;
 }
 
 .main-footer__contact:hover,
 .main-footer__contact:focus-visible {
-  color: rgba(117, 97, 87, 1);
+  color: #756157;
   outline: none;
 }
 
 @supports not selector(:focus-visible) {
   .main-footer__copyright--logo:focus {
-    color: rgba(117, 97, 87, 1);
+    color: #756157;
     outline: none;
   }
 }
@@ -691,7 +698,7 @@ body {
 
 .main-footer__copyright--logo:hover path,
 .main-footer__copyright--logo:focus-visible path {
-  fill: rgba(117, 97, 87, 1);
+  fill: #756157;
 }
 
 .main-footer__copyright--logo:focus-visible {
@@ -716,7 +723,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
 }
 
 .filter-apartment__title {
@@ -725,7 +732,7 @@ body {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .filter-apartment__breadcrumbs {
@@ -759,7 +766,7 @@ body {
   align-self: center;
   font-size: 16px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .breadcrumbs__link:hover:not(.breadcrumbs__link--current),
@@ -804,7 +811,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .filter-apartment__list {
@@ -825,14 +832,14 @@ body {
 .filter-apartment__label {
   padding-left: 36px;
   line-height: 23px;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .filter-apartment__checkbox-mark,
 .filter-apartment__radio-mark {
   align-self: center;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
   position: absolute;
   left: 0;
 }
@@ -863,13 +870,13 @@ body {
 
 .filter-apartment__checkbox:focus-visible + .filter-apartment__checkbox-mark,
 .filter-apartment__radio:focus-visible + .filter-apartment__radio-mark {
-  outline: 3px solid rgba(131, 179, 211, 1);
+  outline: 3px solid #83b3d3;
 }
 
 @supports not selector(:focus-visible) {
   .filter-apartment__checkbox:focus + .filter-apartment__checkbox-mark,
   .filter-apartment__radio:focus + .filter-apartment__radio-mark {
-    outline: 3px solid rgba(131, 179, 211, 1);
+    outline: 3px solid #83b3d3;
   }
 }
 
@@ -901,7 +908,7 @@ body {
   display: block;
   width: 10px;
   height: 10px;
-  background-color: rgba(63, 94, 114, 1);
+  background-color: #3f5e72;
   border-radius: 50%;
   position: absolute;
   top: 5px;
@@ -959,17 +966,17 @@ body {
 
 .filter-apartment__range-input:hover,
 .filter-apartment__range-input:focus-visible {
-  background-color: rgba(230, 230, 230, 1);
+  background-color: #e6e6e6;
 }
 
 .filter-apartment__range-input:focus-visible {
-  outline: 3px solid rgba(131, 179, 211, 1);
+  outline: 3px solid #83b3d3;
   outline-offset: -3px;
 }
 
 @supports not selector(:focus-visible) {
   .filter-apartment__range-toggle:focus {
-    outline: 3px solid rgba(131, 179, 211, 1);
+    outline: 3px solid #83b3d3;
     outline-offset: -3px;
   }
 }
@@ -988,14 +995,14 @@ body {
 .filter-apartment__range-bar {
   width: 226px;
   height: 4px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 }
 
 .filter-apartment__range-toggle {
   padding: 10px;
   position: absolute;
   top: -8px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -1015,21 +1022,21 @@ body {
 
 .filter-apartment__range-toggle:focus-visible {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  outline: 3px solid rgba(131, 179, 211, 1);
+  outline: 3px solid #83b3d3;
   outline-offset: -3px;
 }
 
 @supports not selector(:focus-visible) {
   .filter-apartment__range-toggle:focus {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-    outline: 3px solid rgba(131, 179, 211, 1);
+    outline: 3px solid #83b3d3;
     outline-offset: -3px;
   }
 }
 
 .filter-apartment__range-toggle:active {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
-  outline: 2px solid rgba(131, 179, 211, 1);
+  outline: 2px solid #83b3d3;
   outline-offset: -2px;
 }
 
@@ -1048,19 +1055,19 @@ body {
   text-transform: uppercase;
   line-height: 20px;
   border: none;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .filter-apartment__form-btn--submit {
   margin-bottom: 32px;
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
   cursor: pointer;
 }
 
 .filter-apartment__form-btn--submit:active {
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
 }
 
 .filter-apartment__form-btn--reset {
@@ -1079,10 +1086,12 @@ body {
 }
 
 .filter-sorting__title {
+  max-width: 530px;
   margin: 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  word-wrap: break-word;
 }
 
 .filter-sorting__select-cost {
@@ -1092,8 +1101,8 @@ body {
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
-  color: rgba(51, 51, 51, 1);
-  outline: 2px solid rgba(229, 229, 229, 1);
+  color: #333333;
+  outline: 2px solid #e5e5e5;
   border: none;
   border-radius: 4px;
   -webkit-appearance: none;
@@ -1107,13 +1116,13 @@ body {
 .filter-sorting__select-cost:hover,
 .filter-sorting__select-cost:focus-visible,
 .filter-sorting__card-layout-btn:focus-visible {
-  outline: 2px solid rgba(104, 162, 202, 1);
+  outline: 2px solid #68a2ca;
 }
 
 @supports not selector(:focus-visible) {
   .filter-sorting__select-cost:focus,
   .filter-sorting__card-layout-btn:focus {
-    outline: 2px solid rgba(104, 162, 202, 1);
+    outline: 2px solid #68a2ca;
   }
 }
 
@@ -1124,23 +1133,25 @@ body {
 }
 
 .filter-sorting__card-layout-list {
+  max-width: 160px;
   padding-bottom: 1px;
-  margin-left: 74px;
+  margin-left: 76px;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 12px;
 }
 
-.filter-sorting__card-layout-item:not(:first-child) {
+.filter-sorting__card-layout-item:not(:nth-child(3n-2)) {
   margin-left: 12px;
 }
 
 .filter-sorting__card-layout-btn {
   padding: 22px;
   display: block;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
-  outline: 2px solid rgba(229, 229, 229, 1);
+  outline: 2px solid #e5e5e5;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -1149,7 +1160,7 @@ body {
 .filter-sorting__card-layout-btn:hover,
 .filter-sorting__card-layout-btn:active,
 .filter-sorting__card-layout-btn--current {
-  outline: 2px solid rgba(0, 0, 0, 1);
+  outline: 2px solid #000000;
 }
 
 .filter-sorting__card-layout-btn--base {
@@ -1173,7 +1184,7 @@ body {
   display: block;
   height: 1px;
   width: 1060px;
-  background-color: rgba(230, 230, 230, 1);
+  background-color: #e6e6e6;
   position: absolute;
   bottom: 0;
   left: 69px;
@@ -1190,7 +1201,7 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  outline: 1px solid rgba(230, 230, 230, 1);
+  outline: 1px solid #e6e6e6;
   border-radius: 4px;
 }
 
@@ -1262,7 +1273,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   border-radius: 4px;
 }
 
@@ -1270,38 +1281,38 @@ body {
   padding: 8px 26px;
   text-align: center;
   text-decoration: none;
-  background-color: rgba(117, 97, 87, 1);
+  background-color: #756157;
 }
 
 .options__card-btn {
   padding: 8px 10px;
   font-family: inherit;
   border: none;
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
   cursor: pointer;
 }
 
 .options__card-btn:active {
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
 }
 
 .options__card-btn--selected {
-  background-color: rgba(125, 181, 79, 1);
+  background-color: #7db54f;
 }
 
 .options__card-btn--selected:hover,
 .options__card-btn--selected:focus-visible {
-  background-color: rgba(108, 158, 66, 1);
+  background-color: #6c9e42;
 }
 
 @supports not selector(:focus-visible) {
   .options__card-btn--selected:focus {
-    background-color: rgba(108, 158, 66, 1);
+    background-color: #6c9e42;
   }
 }
 
 .options__card-btn--selected:active {
-  background-color: rgba(125, 181, 79, 1);
+  background-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1309,8 +1320,8 @@ body {
   grid-column: 2 / -1;
   padding: 9px 22px 8px 23px;
   font-weight: 400;
-  color: rgba(51, 51, 51, 1);
-  background-color: rgba(242, 242, 242, 1);
+  color: #333333;
+  background-color: #f2f2f2;
   cursor: default;
 }
 
@@ -1336,41 +1347,41 @@ body {
 .pagination__link {
   padding: 11px 15px 13px;
   min-width: 60px;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
   border-radius: 4px;
   outline: none;
 }
 
 .pagination__link--current {
-  background-color: rgba(242, 242, 242, 1);
-  color: rgba(0, 0, 0, 1);
+  background-color: #f2f2f2;
+  color: #000000;
 }
 
 .pagination__link--ellipsis {
-  background-color: rgba(255, 255, 255, 1);
-  color: rgba(0, 0, 0, 1);
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .pagination__link:not(.pagination__link--current, .pagination__link--ellipsis):hover,
 .pagination__link:focus-visible {
-  background-color: rgba(104, 162, 202, 1);
-  outline: 1px solid rgba(130, 179, 211, 1);
+  background-color: #68a2ca;
+  outline: 1px solid #82b3d3;
   outline-offset: -1px;
 }
 
 @supports not selector(:focus-visible) {
   .pagination__link:focus {
-    background-color: rgba(104, 162, 202, 1);
-    outline: 1px solid rgba(130, 179, 211, 1);
+    background-color: #68a2ca;
+    outline: 1px solid #82b3d3;
     outline-offset: -1px;
   }
 }
 
 .pagination__link:not(.pagination__link--current, .pagination__link--ellipsis):active {
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1380,16 +1391,16 @@ body {
 }
 
 .subscribe__title--color {
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .subscribe__desc--color {
   width: 475px;
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
 }
 
 .subscribe__email--catalog {
-  background-color: rgba(242, 242, 242, 1);
+  background-color: #f2f2f2;
 }
 
 .modal-container {
@@ -1411,7 +1422,7 @@ body {
   min-width: 717px;
   margin: 0 auto auto;
   padding: 62px 70px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   position: relative;
@@ -1419,6 +1430,7 @@ body {
 }
 
 .modal__content-title {
+  max-width: 520px;
   margin: 0;
   margin-bottom: 64px;
   font-size: 30px;
@@ -1435,7 +1447,7 @@ body {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: #f2f2f2;
   background-image: url("../images/modal-cross.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -1444,25 +1456,25 @@ body {
 }
 
 .modal__close-button:hover {
-  background-color: rgba(230, 230, 230, 1);
+  background-color: #e6e6e6;
 }
 
 .modal__close-button:focus-visible {
-  background-color: rgba(230, 230, 230, 1);
-  outline: 3px solid rgba(131, 179, 211, 1);
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
   outline-offset: -3px;
 }
 
 @supports not selector(:focus-visible) {
   .modal__close-button:focus {
-    background-color: rgba(230, 230, 230, 1);
-    outline: 3px solid rgba(131, 179, 211, 1);
+    background-color: #e6e6e6;
+    outline: 3px solid #83b3d3;
     outline-offset: -3px;
   }
 }
 
 .modal__close-button:active {
-  background-color: rgba(230, 230, 230, 1);
+  background-color: #e6e6e6;
   opacity: 0.3;
   outline: none;
 }
@@ -1509,7 +1521,7 @@ body {
 }
 
 .modal__input-comment--error {
-  color: rgba(255, 87, 87, 1);
+  color: #ff5757;
 }
 
 .modal__input-date {
@@ -1519,7 +1531,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: #f2f2f2;
   background-image: url("../images/modal-date.svg");
   background-position: 400px 14px;
   background-repeat: no-repeat;
@@ -1551,7 +1563,7 @@ body {
   font-family: inherit;
   font-weight: 700;
   text-align: center;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: #f2f2f2;
   border: none;
   outline: none;
   border-radius: 4px;
@@ -1570,7 +1582,7 @@ body {
   padding: 0;
   height: 20px;
   width: 20px;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: #f2f2f2;
   outline: none;
   border: none;
   border-radius: 4px;
@@ -1617,26 +1629,26 @@ body {
 .modal__btn-number--max:focus-visible::before,
 .modal__btn-number--min:focus-visible::before,
 .modal__btn-number--max:focus-visible::after {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #000000;
 }
 
 .modal__btn-number:focus-visible,
 .modal__input-date:focus-visible {
-  outline: 3px solid rgba(130, 179, 211, 1);
+  outline: 3px solid #82b3d3;
 }
 
 @supports not selector(:focus-visible) {
   .modal__btn-number--max:focus::before,
   .modal__btn-number--min:focus::before,
   .modal__btn-number--max:focus::after {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: #000000;
   }
 }
 
 @supports not selector(:focus-visible) {
   .modal__btn-number:focus,
   .modal__input-date:focus {
-    outline: 3px solid rgba(130, 179, 211, 1);
+    outline: 3px solid #82b3d3;
   }
 }
 
@@ -1654,7 +1666,7 @@ body {
   margin-left: 10px;
   width: 26px;
   height: 26px;
-  background-color: rgba(131, 179, 211, 1);
+  background-color: #83b3d3;
   background-image: url("../images/modal-tooltip.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1682,8 +1694,8 @@ body {
   width: 256px;
   font-size: 16px;
   line-height: 20px;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(51, 51, 51, 1);
+  color: #ffffff;
+  background-color: #333333;
   border-radius: 10px;
   position: absolute;
   right: 112px;
@@ -1698,7 +1710,7 @@ body {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid rgba(51, 51, 51, 1);
+  border-bottom: 10px solid #333333;
   position: absolute;
   top: -10px;
   left: 118px;
@@ -1716,13 +1728,13 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(131, 179, 211, 1);
+  color: #ffffff;
+  background-color: #83b3d3;
   border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .modal__form-submit-btn:active {
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
 }
