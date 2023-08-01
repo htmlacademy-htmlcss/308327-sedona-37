@@ -615,15 +615,13 @@ body {
 
 .main-footer {
   padding: 44px 70px 30px;
-  display: grid;
-  column-gap: 236.5px;
-  grid-template-columns: repeat(3, max-content);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .main-footer__socials-list {
-  grid-column: 1 / 2;
-  width: 142px;
+  max-width: 142px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -664,11 +662,12 @@ body {
 }
 
 .main-footer__contact {
-  grid-column: 2 / 3;
+  max-width: 335px;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+  word-wrap: break-word;
 }
 
 .main-footer__contact:hover,
@@ -686,10 +685,6 @@ body {
 
 .main-footer__contact:active {
   color: rgba(117, 97, 87, 0.3);
-}
-
-.main-footer__copyright {
-  grid-column: 3 / -1;
 }
 
 .main-footer__copyright--logo {
