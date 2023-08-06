@@ -498,14 +498,14 @@ body {
 }
 
 .search-hotel {
-  padding: 95px 305px;
+  padding: 96px 305px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
 .search-hotel__title {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .search-hotel__desc {
@@ -526,7 +526,7 @@ body {
 }
 
 .subscribe {
-  padding: 97px 258px 104px;
+  padding: 95px 258px 105px;
   display: flex;
   flex-direction: column;
   background-image: url("../images/subscribe.jpg");
@@ -541,7 +541,7 @@ body {
 }
 
 .subscribe__desc {
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 }
 
 .subscribe__title,
@@ -556,7 +556,7 @@ body {
 
 .subscribe__email {
   flex-grow: 1;
-  padding: 14px 220px 14px 20px;
+  padding: 14px 220px 13px 20px;
   font-family: inherit;
   font-size: inherit;
   line-height: 24px;
@@ -573,7 +573,7 @@ body {
 }
 
 .subscribe__email-btn {
-  padding: 8px 50px;
+  padding: 7px 50px;
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
@@ -690,7 +690,7 @@ body {
 }
 
 .main-footer__copyright--logo {
-  padding-top: 4px;
+  padding-top: 3px;
 }
 
 .main-footer__copyright--logo:hover path,
@@ -1324,7 +1324,7 @@ body {
 }
 
 .pagination {
-  padding: 39px 70px 59px;
+  padding: 39px 70px 60px;
   display: flex;
   justify-content: start;
 }
@@ -1419,7 +1419,7 @@ body {
 .modal {
   min-width: 717px;
   margin: 0 auto auto;
-  padding: 62px 70px;
+  padding: 64px 70px;
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
@@ -1440,7 +1440,7 @@ body {
 .modal__close-button {
   padding: 0;
   position: absolute;
-  top: 62px;
+  top: 64px;
   right: 52px;
   width: 52px;
   height: 52px;
@@ -1516,6 +1516,7 @@ body {
   position: absolute;
   bottom: -25px;
   left: 20px;
+  color: #333333;
 }
 
 .modal__input-comment--error {
@@ -1554,7 +1555,7 @@ body {
 }
 
 .modal__input-number {
-  padding: 14px 36px;
+  padding: 15px 36px 13px;
   width: 110px;
   font-size: inherit;
   line-height: 20px;
@@ -1661,7 +1662,7 @@ body {
 }
 
 .modal__tooltip-btn {
-  margin-left: 10px;
+  margin-left: 11px;
   width: 26px;
   height: 26px;
   background-color: #83b3d3;
